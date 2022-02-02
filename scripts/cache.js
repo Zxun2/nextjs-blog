@@ -13,11 +13,11 @@ function postData() {
       "utf-8"
     );
 
-    const { data: frontmatter } = matter(markdownWithMeta);
+    const { data: frontMatter } = matter(markdownWithMeta);
 
     return {
       slug,
-      frontmatter,
+      frontMatter,
     };
   });
 
