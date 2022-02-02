@@ -2,12 +2,13 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
+// API cannot access directory in production!
 export default (req, res) => {
   let posts;
 
   if (process.env.NODE_ENV === "production") {
     // Fetch from cache
-    // posts = require("../../cache/data").posts;
+    posts = require("../../cache/data").posts;
   } else {
     const files = fs.readdirSync(path.join("posts"));
 

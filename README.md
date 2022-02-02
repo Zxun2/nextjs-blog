@@ -1,3 +1,7 @@
+```bash
+node node_modules\husky\lib\bin.js add .husky/pre-commit "npm run cache-posts && git add cache/data.js"
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
